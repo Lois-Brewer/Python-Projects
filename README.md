@@ -1,2 +1,2 @@
 # Python
- A repository for beginner projects.
+Contains my public projects.
