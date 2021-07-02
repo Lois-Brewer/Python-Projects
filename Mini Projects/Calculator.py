@@ -3,7 +3,7 @@ import re
 
 def filter(equation_string):
     # Filters input string to an equation
-    equation_string = re.findall("[0-9^*%/\+\-.]+", equation_string)
+    equation_string = re.findall("[0-9^*%/\+\-.()]+", equation_string)
     filtered_eq = ''.join(equation_string)
     return filtered_eq
 
