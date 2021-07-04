@@ -10,12 +10,12 @@ def filter(equation_string):
 
 def calculation(filtered_equation):
     # Calculates the answer
+    operators = re.findall("[*%/\+\-]+", filtered_equation)
     try:
         answer = eval(filter(filtered_equation))
         return answer
     except SyntaxError:
-        return "An error has occurred. Please try again."
-
+        return "You have used too many operators, decimal points or numbers starting with zero. Please try again."
 
 
 # Input string
