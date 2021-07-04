@@ -10,14 +10,11 @@ def filter(equation_string):
 
 def calculation(filtered_equation):
     # Calculates the answer
-    for i in range(len(filtered_equation)):
-        try:
-            answer = eval(filter(filtered_equation))
-            return answer
-        except filtered_equation[i] == '0' and SyntaxError:
-            filtered_equation = filtered_equation.replace(str(i), '')
-            return eval(filter(filtered_equation))
-    print(filtered_equation)
+    try:
+        answer = eval(filter(filtered_equation))
+        return answer
+    except SyntaxError:
+        return "An error has occurred. Please try again."
 
 
 
