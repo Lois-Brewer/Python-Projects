@@ -33,7 +33,7 @@ def counter(count_level, comp_guess, maximum):
                 guess(comp_guess, new_guess1, maximum, count_level)
         except TypeError:
             print("An error has occurred!")
-            quit()
+            exit()
 
 
 def guess(computer_guess, user_guess, maximum, counts):
@@ -41,7 +41,7 @@ def guess(computer_guess, user_guess, maximum, counts):
     if user_guess < maximum + 1:
         if computer_guess == user_guess:
             print(f"Congratulations! {user_guess} is the correct number!")
-            quit()
+            exit()
         elif computer_guess > user_guess:
             counts -= 1
             print(f"{user_guess} is too low!")
@@ -65,7 +65,7 @@ try:
 except ValueError:
     # Terminates program if upper_limit isn't an int
     print("An error has occurred.")
-    quit()
+    exit()
 
 # Assigns random number
 my_guess = make_random_number(upper)
