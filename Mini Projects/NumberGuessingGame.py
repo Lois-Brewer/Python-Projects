@@ -17,24 +17,19 @@ def make_random_number(specified_range):
 
 def counter(count_level, comp_guess, maximum):
     while count_level >= 0:
-        try:
-            if count_level == 0:
-                print(f"You have run out of guesses. The answer was {comp_guess}.")
-                quit()
-            elif count_level == 1:
-                print(f"You have {count_level} guess left. Please try another guess.")
-                new_guess = input("What is your next guess?")
-                final_guess = is_numeric(new_guess)
-                guess(comp_guess, final_guess, maximum, count_level)
-            else:
-                print(f"You have {count_level} guesses left. Please try another guess.")
-                new_guess = input("What is your next guess?")
-                new_guess1 = is_numeric(new_guess)
-                guess(comp_guess, new_guess1, maximum, count_level)
-        except TypeError:
-            print("An error has occurred!")
+        if count_level == 0:
+            print(f"You have run out of guesses. The answer was {comp_guess}.")
             exit()
-
+        elif count_level == 1:
+            print(f"You have {count_level} guess left. Please try another guess.")
+            new_guess = input("What is your next guess?")
+            final_guess = is_numeric(new_guess)
+            guess(comp_guess, final_guess, maximum, count_level)
+        else:
+            print(f"You have {count_level} guesses left. Please try another guess.")
+            new_guess = input("What is your next guess?")
+            new_guess1 = is_numeric(new_guess)
+            guess(comp_guess, new_guess1, maximum, count_level)
 
 def guess(computer_guess, user_guess, maximum, counts):
     # Compares the randomly generated number and user's guess
