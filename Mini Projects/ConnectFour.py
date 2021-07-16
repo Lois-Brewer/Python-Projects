@@ -5,10 +5,5 @@ boolean = True
 
 grid = [['-'] * COLUMN_COUNT] * ROW_COUNT
 
-
-def print_grid(new_grid):
-    for s in new_grid:
-        print(*s)
-
-
-print_grid(grid)
+for row in grid:
+    print(*row)
