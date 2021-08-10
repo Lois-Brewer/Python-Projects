@@ -11,7 +11,7 @@ count = 5
 print("Welcome to Hangman! Please note that the word length will be between 5-10 characters long.")
 
 while running:
-    cha_guess = input("Input guess:")
+    cha_guess = input("Input guess:").lower()[0]
     for i, cha in hangman_cha_list:
         if cha_guess == cha:
             output_str = output_str[:i] + cha + output_str[i + 1:]
