@@ -1,8 +1,11 @@
 from random_word import RandomWords
 
+# Calls class RandomWords
 r = RandomWords()
-hangman_word = r.get_random_word(hasDictionaryDef="true", minLength=5, maxLength=10)
-hangman_cha_list = list(enumerate(hangman_word.lower()))
+
+# Obtaining specific word and setting up variables
+hangman_word = r.get_random_word(hasDictionaryDef="true", minLength=5, maxLength=10).lower()
+hangman_cha_list = list(enumerate(hangman_word))
 output_str = "-" * len(hangman_word)
 running = True
 count = 5
@@ -11,6 +14,7 @@ count = 5
 print("Welcome to Hangman! Please note that the word length will be between 5-10 characters long.")
 
 while running:
+    # Running the game with this loop
     cha_guess = input("Input guess:").lower()[0]
     for i, cha in hangman_cha_list:
         if cha_guess == cha:
