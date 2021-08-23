@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/TempConvertor.iml" filepath="$PROJECT_DIR$/.idea/TempConvertor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TempConverter.iml" filepath="$PROJECT_DIR$/.idea/TempConverter.iml" />
     </modules>
   </component>
 </project>
