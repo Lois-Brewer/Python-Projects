@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6a4632b-681d-4af7-ad22-bdb38dcfabcb" name="Changes" comment="Refactored code.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c6a4632b-681d-4af7-ad22-bdb38dcfabcb" name="Changes" comment="Refactored code and added comments." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +20,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/TemperatureConversions.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="TemperatureConversions" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -61,6 +59,7 @@
       <workItem from="1629735641362" duration="3000" />
       <workItem from="1629736708246" duration="19000" />
       <workItem from="1630250041671" duration="75000" />
+      <workItem from="1631196897190" duration="296000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored code.">
       <created>1629735621827</created>
@@ -69,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629735621827</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactored code and added comments.">
+      <created>1631197190140</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1631197190140</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,9 +95,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactored code." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored code." />
+    <MESSAGE value="Refactored code and added comments." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored code and added comments." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TempConverter$TemperatureConversions.coverage" NAME="TemperatureConversions Coverage Results" MODIFIED="1629735598668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TempConverter$TemperatureConversions.coverage" NAME="TemperatureConversions Coverage Results" MODIFIED="1631197173581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
