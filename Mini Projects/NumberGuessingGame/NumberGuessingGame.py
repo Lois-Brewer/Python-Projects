@@ -1,17 +1,21 @@
 from random import randint
 
 
+# Defines variables
 COUNT = 5
 running_game = True
 
 while running_game:
+    # Sets limits
     lower_limit_input = input("Lower lim pls:")
     upper_limit_input = input("Upper lim pls:")
+    # Checks if inputs are numerical
     if lower_limit_input.isnumeric() and upper_limit_input.isnumeric():
         lower_limit, upper_limit = int(lower_limit_input), int(upper_limit_input)
         if lower_limit > upper_limit:
             print("ERROR: Lower limit is greater than upper limit.")
         else:
+            # Runs number guessing game
             ran_num = randint(lower_limit, upper_limit)
             while COUNT > 0:
                 user_guess = input("Please insert a guess:")
